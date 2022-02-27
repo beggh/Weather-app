@@ -105,7 +105,7 @@ async function sendData() {
             let temp = new_result.main.temp;
             let wind_speed = new_result.wind.speed;
             temperature.innerHTML = (convertToC(temp)).toFixed(2)+ "°c";
-            location.innerHTML = new_result.name.value + " (" + latitude.value + "°, " + longitude.value + "°)";
+            //location.innerHTML = new_result.name.value + " (" + latitude.value + "°, " + longitude.value + "°)";
             description.innerHTML = new_result.weather[0].main ;
             speed.innerHTML = wind_speed;
             return new_result;
